@@ -13,6 +13,14 @@ class LinkedList:
     def __init__(self):
         self.head=None
 
+    def get_length(self):
+        itr=self.head
+        count=0
+        while itr!=None:
+            count+=1
+            itr=itr.get_next()
+        return(count)
+
     def insert(self,data):
         temp_node=Node(data)
         temp_node.set_next(self.head)
@@ -43,4 +51,3 @@ class LinkedList:
         while node!=None:
             print node.get_data()
             node=node.get_next()
-
