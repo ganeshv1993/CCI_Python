@@ -1,3 +1,5 @@
+
+##String 
 string=raw_input().strip()
 ascii_list=[False]*256
 if len(string)>256:
